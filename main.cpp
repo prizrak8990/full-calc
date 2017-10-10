@@ -41,7 +41,7 @@ void fun1()
 void fun2()
 {
 	setlocale(LC_ALL, "Russian");
-	::n = ::x ^ ::y;
+	::n = pow(::x, ::y);
 	cout << "Рузультат:" << ::n << endl;
 }
 void fun3()
