@@ -3,67 +3,65 @@ using namespace std;
 
 int n, x, y;
 
-void pluss()
+void pluss(int x, int y, int n)
 {
-	::n = ::x + ::y;
-	cout << "Рузультат:" << ::n<< endl;
+	n = x + y;
+	cout << "Рузультат:" << n<< endl;
 }
-void minuss()
+void minuss(int x, int y, int n)
 {
-	::n = ::x - ::y;
-	cout << "Рузультат:" << ::n << endl;
+	n = x - y;
+	cout << "Рузультат:" << n << endl;
 }
-void umn()
+void umn(int x, int y, int n)
 {
-	::n = ::x * ::y;
-	cout << "Рузультат:" << ::n << endl;
+	n = x * y;
+	cout << "Рузультат:" << n << endl;
 }
-void deli()
+void deli(int x, int y, int n)
 {
-	if (::y != 0)
+	if (y != 0)
 	{
-		::n = ::x / ::y;
-		cout << "Рузультат:" << ::n << endl;
+		n = x / y;
+		cout << "Рузультат:" << n << endl;
 	}
 	else
 		cout << "На 0 делить нельзя!";
 }
-void fun1()
+void fun1(int x, int y, int n)
 {
-	::n = ::x % ::y;
-	cout << "Рузультат:" << ::n << endl;
+	n = x % y;
+	cout << "Рузультат:" << n << endl;
 }
-void fun2()
+void fun2(int x, int y, int n)
 {
-	::n = pow(::x, ::y);
-	cout << "Рузультат:" << ::n << endl;
+	n = pow(x, y);
+	cout << "Рузультат:" << n << endl;
 }
-void fun3()
+void fun3(int x, int n)
 {
-	::n = !::x;
-	cout << "Рузультат:" << ::n << endl;
+	n = !x;
+	cout << "Рузультат:" << n << endl;
 }
-void fun4()
+void fun4(int x, int y, int n)
 {
-	::n = ::x & ::y;
-	cout << "Рузультат:" << ::n << endl;
+	n = x & y;
+	cout << "Рузультат:" << n << endl;
 }
-void fun5()
+void fun5(int x, int y, int n)
 {
-	::n = ::x | ::y;
-	cout << "Рузультат:" << ::n << endl;
+	n = x | y;
+	cout << "Рузультат:" << n << endl;
 }
-void fun6()
+void fun6(int x, int n)
 {
-	::y = 1;
-	::n = ::x < ::y;
-	cout << "Рузультат:" << ::n << endl;
+	n = x < 1;
+	cout << "Рузультат:" << n << endl;
 }
-void fun7()
+void fun7(int x, int n)
 {
-	::y = 1;
-	::n = ::x > ::y;
-	cout << "Рузультат:" << ::n << endl;
+	n = x > 1;
+	cout << "Рузультат:" << n << endl;
 }
 
 int main()
