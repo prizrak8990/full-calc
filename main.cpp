@@ -18,9 +18,7 @@ void umn(int x, int y)
 void deli(int x, int y)
 {
 	if (y != 0)
-	{
 		cout << "Рузультат:" << x / y << endl;
-	}
 	else
 		cout << "На 0 делить нельзя!";
 }
