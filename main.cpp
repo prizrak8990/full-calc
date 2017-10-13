@@ -1,72 +1,62 @@
 #include <iostream>
 using namespace std;
 
-int n, x, y;
+int x, y;
 
-void pluss(int x, int y, int n)
+void pluss(int x, int y)
 {
-	n = x + y;
-	cout << "Рузультат:" << n<< endl;
+	cout << "Рузультат:" << x + y << endl;
 }
-void minuss(int x, int y, int n)
+void minuss(int x, int y)
 {
-	n = x - y;
-	cout << "Рузультат:" << n << endl;
+	cout << "Рузультат:" << x - y << endl;
 }
-void umn(int x, int y, int n)
+void umn(int x, int y)
 {
-	n = x * y;
-	cout << "Рузультат:" << n << endl;
+	cout << "Рузультат:" << x * y << endl;
 }
-void deli(int x, int y, int n)
+void deli(int x, int y)
 {
 	if (y != 0)
 	{
-		n = x / y;
-		cout << "Рузультат:" << n << endl;
+		cout << "Рузультат:" << x / y << endl;
 	}
 	else
 		cout << "На 0 делить нельзя!";
 }
-void fun1(int x, int y, int n)
+void fun1(int x, int y)
 {
-	n = x % y;
-	cout << "Рузультат:" << n << endl;
+	cout << "Рузультат:" << x % y << endl;
 }
-void fun2(int x, int y, int n)
+void fun2(int x, int y)
 {
-	n = pow(x, y);
-	cout << "Рузультат:" << n << endl;
+	cout << "Рузультат:" << pow(x , y) << endl;
 }
-void fun3(int x, int n)
+void fun3(int x)
 {
-	n = !x;
-	cout << "Рузультат:" << n << endl;
+	cout << "Рузультат:" << !x << endl;
 }
-void fun4(int x, int y, int n)
+void fun4(int x, int y)
 {
-	n = x & y;
-	cout << "Рузультат:" << n << endl;
+	cout << "Рузультат:" << x & y << endl;
 }
-void fun5(int x, int y, int n)
+void fun5(int x, int y)
 {
-	n = x | y;
-	cout << "Рузультат:" << n << endl;
+	cout << "Рузультат:" << x | y << endl;
 }
-void fun6(int x, int n)
-{
-	n = x < 1;
-	cout << "Рузультат:" << n << endl;
+void fun6(int x)
+{ 
+	cout << "Рузультат:" << x < 1 << endl;
 }
-void fun7(int x, int n)
+void fun7(int x)
 {
-	n = x > 1;
-	cout << "Рузультат:" << n << endl;
+	cout << "Рузультат:" << x > 1 << endl;
 }
 
 int main()
 {
 	setlocale(LC_ALL, "Russian");
+	int x,y;
 	char a, soglas;
 	soglas = 'y';
 	while (soglas == 'y')
@@ -76,59 +66,59 @@ int main()
 		if (a != '<' || a != '>' || a != '!')
 		{
 			cout << "Введите 1 число";
-			cin >> ::x;
+			cin >> x;
 			cout << "Введите 2 число";
-			cin >> ::y;
+			cin >> y;
 		}
 		else
 		{
 			cout << "Введите число";
-			cin >> ::x;
+			cin >> x;
 		}
 		switch (a)
 		{
 		case'+':
-			pluss();
+			pluss(x,y);
 			break;
 
 		case'-':
-			minuss();
+			minuss(x,y);
 			break;
 
 		case'*':
-			umn();
+			umn(x,y);
 			break;
 
 		case'/':
-			deli();
+			deli(x,y);
 			break;
 
 		case'%':
-			fun1();
+			fun1(x,y);
 			break;
 
 		case'^':
-			fun2();
+			fun2(x,y);
 			break;
 
 		case'!':
-			fun3();
+			fun3(x,y);
 			break;
 
 		case'&':
-			fun4();
+			fun4(x,y);
 			break;
 
 		case'|':
-			fun5();
+			fun5(x,y);
 			break;
 
 		case'<':
-			fun6();
+			fun6(x,y);
 			break;
 
 		case'>':
-			fun7();
+			fun7(x,y);
 			break;
 		default:
 			cout << "Ошибка"<< endl;
