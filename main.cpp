@@ -5,25 +5,21 @@ int n, x, y;
 
 void pluss()
 {
-	setlocale(LC_ALL, "Russian");
 	::n = ::x + ::y;
 	cout << "Рузультат:" << ::n<< endl;
 }
 void minuss()
 {
-	setlocale(LC_ALL, "Russian");
 	::n = ::x - ::y;
 	cout << "Рузультат:" << ::n << endl;
 }
 void umn()
 {
-	setlocale(LC_ALL, "Russian");
 	::n = ::x * ::y;
 	cout << "Рузультат:" << ::n << endl;
 }
 void deli()
 {
-	setlocale(LC_ALL, "Russian");
 	if (::y != 0)
 	{
 		::n = ::x / ::y;
@@ -34,44 +30,37 @@ void deli()
 }
 void fun1()
 {
-	setlocale(LC_ALL, "Russian");
 	::n = ::x % ::y;
 	cout << "Рузультат:" << ::n << endl;
 }
 void fun2()
 {
-	setlocale(LC_ALL, "Russian");
 	::n = pow(::x, ::y);
 	cout << "Рузультат:" << ::n << endl;
 }
 void fun3()
 {
-	setlocale(LC_ALL, "Russian");
 	::n = !::x;
 	cout << "Рузультат:" << ::n << endl;
 }
 void fun4()
 {
-	setlocale(LC_ALL, "Russian");
 	::n = ::x & ::y;
 	cout << "Рузультат:" << ::n << endl;
 }
 void fun5()
 {
-	setlocale(LC_ALL, "Russian");
 	::n = ::x | ::y;
 	cout << "Рузультат:" << ::n << endl;
 }
 void fun6()
 {
-	setlocale(LC_ALL, "Russian");
 	::y = 1;
 	::n = ::x < ::y;
 	cout << "Рузультат:" << ::n << endl;
 }
 void fun7()
 {
-	setlocale(LC_ALL, "Russian");
 	::y = 1;
 	::n = ::x > ::y;
 	cout << "Рузультат:" << ::n << endl;
