@@ -110,11 +110,11 @@ int main()
 			fun5(x,y);
 			break;
 
-		case'<':
+		case'<<':
 			fun6(x);
 			break;
 
-		case'>':
+		case'>>':
 			fun7(x);
 			break;
 		default:
