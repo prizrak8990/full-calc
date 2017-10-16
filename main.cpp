@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-int x, y;
-
 void pluss(int x, int y)
 {
 	cout << "Рузультат:" << x + y << endl;
@@ -36,7 +34,7 @@ void fun3(int x)
 }
 void fun4(int x, int y)
 {
-	cout << "Рузультат:" << x & y << endl;
+	cout << "Рузультат:" << (x & y) << endl;
 }
 void fun5(int x, int y)
 {
@@ -44,11 +42,11 @@ void fun5(int x, int y)
 }
 void fun6(int x)
 { 
-	cout << "Рузультат:" << x < 1 << endl;
+	cout << "Рузультат:" << (x < 1) << endl;
 }
 void fun7(int x)
 {
-	cout << "Рузультат:" << x > 1 << endl;
+	cout << "Рузультат:" << (x > 1) << endl;
 }
 
 int main()
@@ -100,7 +98,7 @@ int main()
 			break;
 
 		case'!':
-			fun3(x,y);
+			fun3(x);
 			break;
 
 		case'&':
@@ -112,11 +110,11 @@ int main()
 			break;
 
 		case'<':
-			fun6(x,y);
+			fun6(x);
 			break;
 
 		case'>':
-			fun7(x,y);
+			fun7(x);
 			break;
 		default:
 			cout << "Ошибка"<< endl;
