@@ -39,7 +39,7 @@ void fun4(int x, int y)
 }
 void fun5(int x, int y)
 {
-	cout << "Рузультат:" << x | y << endl;
+	cout << "Рузультат:" << (x | y) << endl;
 }
 void fun6(int x)
 { 
