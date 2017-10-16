@@ -43,11 +43,11 @@ void fun5(int x, int y)
 }
 void fun6(int x)
 { 
-	cout << "Рузультат:" << (x < 1) << endl;
+	cout << "Рузультат:" << (x << 1) << endl;
 }
 void fun7(int x)
 {
-	cout << "Рузультат:" << (x > 1) << endl;
+	cout << "Рузультат:" << (x >> 1) << endl;
 }
 
 int main()
